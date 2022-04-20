@@ -1,0 +1,26 @@
+.footer__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding: 10px auto;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-dark-text);
+    background-color: var(--akcent-color-text);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-color: var(--akcent-color-text);
+    &:focus,
+    &:hover {
+        cursor: pointer;
+    }
+}
+.footer__send {
+    margin-left: 10px;
+    padding: 13px auto;
+}

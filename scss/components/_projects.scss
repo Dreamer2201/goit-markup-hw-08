@@ -1,0 +1,31 @@
+.projects {
+    padding-bottom: 94px;
+}
+.projects__title {
+    margin-bottom: 50px;
+}
+.projects__list {
+    display: flex;
+    margin: 0;
+}
+.projects__it:not(:nth-last-child(-n + 1)) {
+    margin-right: 30px;
+}
+.project__thumb {
+    position: relative;
+}
+.projects__dscr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--primary-dark-text);
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,43 @@
+.footer__sonetlinks {
+    margin-right: 93px;
+    margin-left: 70px;
+}
+.footer__network {
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-dark-text);
+}
+.footer__sonetlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__sonetit {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    &:nth-last-child(1) {
+        margin-right: 0px;
+    }
+}
+.footer__sonetlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--animation-function);
+    &:hover {
+        background-color: var(--akcent-color-text);
+        & .footer__sonetsvg {
+            fill: var(--primary-dark-text);
+        }
+    }
+}
+.footer__sonetsvg {
+    fill: var(--primary-dark-text);
+}

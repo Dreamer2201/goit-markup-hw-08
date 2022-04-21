@@ -740,14 +740,14 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-right: 8px;
 }
 
 .portfolio__btn {
@@ -774,6 +774,7 @@ img {
 
 .portfolio__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio__item:nth-last-child(1) {
@@ -807,7 +808,8 @@ img {
 .portfolio__menu {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .portfolio__it {

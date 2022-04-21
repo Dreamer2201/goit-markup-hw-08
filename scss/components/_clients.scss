@@ -8,12 +8,20 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    margin: 0px;
 }
  .clients__it {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: calc(100% - 30px) / 2;
+    margin-right: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+    
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
 }
 .clients__link {
     display: flex;

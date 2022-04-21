@@ -7,6 +7,7 @@
     text-decoration: none;
     &--light {
         color: var(--primary-dark-text);
+        margin-bottom: 20px;
     }
     &--dark {
         color: var(--primary-light-text);

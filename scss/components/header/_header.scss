@@ -1,11 +1,42 @@
+.header__nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .header__list {
     display: none;
 }
 .header__conteiner {
     padding-top: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+.menu__btn {
+    position: relative;
+
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: blue;
+
+    z-index: 99;
+}
+.icon__menu {
+    opacity: 1;
+}
+.menu__btn.is-active .icon__menu {
+    opacity: 0;
+}
+.icon__cross {
+    opacity: 0;
+}
+.menu__btn.is-active .icon__cross {
+    opacity: 1;
+}
+
 // .header {
 //     border-bottom: 1px solid #ececec;
 //     font-weight: 500;

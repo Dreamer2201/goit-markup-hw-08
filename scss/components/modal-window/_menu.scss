@@ -13,7 +13,7 @@
     pointer-events: none;
 
    @media screen and (min-width:480px) and (max-width: 767px) {
-    background-color: transparent;
+    background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
     0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -68,6 +68,9 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: #212121;
+    &--current {
+        color: #2196F3;
+    }
 }
 .menu__tel,
 .menu__mail {
@@ -89,7 +92,7 @@
     display: flex;
 }
 .menu__netlink {
-    margin-right: 20px;
+    margin-right: 10px;
     
     &:nth-last-child(1) {
         margin-right: 0px;
@@ -105,4 +108,20 @@
     letter-spacing: 0.02em;
     
     color: #2196F3;
+}
+.menu__twitter,
+.menu__facebook,
+.menu__linkedin {
+    display: flex;
+    align-items: center;
+}
+.menu__twitter::before,
+.menu__facebook::before,
+.menu__linkedin::before {
+    margin-right: 10px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
 }

@@ -16,26 +16,38 @@
 .menu__btn {
     position: relative;
 
-    display: inline-flex;
+    display: block;
     margin: 0;
     padding: 0;
     border: none;
-    background-color: blue;
+    background-color: transparent;
 
     z-index: 99;
 }
 .icon__menu {
     opacity: 1;
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        cursor: pointer;
+    }
 }
 .menu__btn.is-active .icon__menu {
     opacity: 0;
 }
 .icon__cross {
     opacity: 0;
+    
 }
 .menu__btn.is-active .icon__cross {
     opacity: 1;
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+        cursor: pointer;
+    }
 }
+
 
 // .header {
 //     border-bottom: 1px solid #ececec;

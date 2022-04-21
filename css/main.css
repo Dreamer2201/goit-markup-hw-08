@@ -111,84 +111,6 @@ img {
   height: 0px;
 }
 
-.header__nav {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.header__list {
-  display: none;
-}
-
-.header__conteiner {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.menu__btn {
-  position: relative;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: blue;
-  z-index: 99;
-}
-
-.icon__menu {
-  opacity: 1;
-}
-
-.menu__btn.is-active .icon__menu {
-  opacity: 0;
-}
-
-.icon__cross {
-  opacity: 0;
-}
-
-.menu__btn.is-active .icon__cross {
-  opacity: 1;
-}
-
-.logo {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--primary-light-text);
-  text-decoration: none;
-}
-
-.logo--light {
-  color: var(--primary-dark-text);
-  margin-bottom: 20px;
-}
-
-.logo--dark {
-  color: var(--primary-light-text);
-}
-
-.header__logo {
-  margin-right: 93px;
-}
-
-.logo__span {
-  color: var(--akcent-color-text);
-}
-
-.header__contacts {
-  display: none;
-}
-
-.header__sonetlinks {
-  display: none;
-}
-
 .menu__overlay {
   position: fixed;
   top: 0;
@@ -204,7 +126,7 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu__overlay {
-    background-color: transparent;
+    background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
@@ -267,6 +189,10 @@ img {
   color: #212121;
 }
 
+.menu__link--current {
+  color: #2196F3;
+}
+
 .menu__tel,
 .menu__mail {
   font-weight: 500;
@@ -291,7 +217,7 @@ img {
 }
 
 .menu__netlink {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menu__netlink:nth-last-child(1) {
@@ -307,6 +233,108 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.menu__twitter,
+.menu__facebook,
+.menu__linkedin {
+  display: flex;
+  align-items: center;
+}
+
+.menu__twitter::before,
+.menu__facebook::before,
+.menu__linkedin::before {
+  margin-right: 10px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.header__nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: none;
+}
+
+.header__conteiner {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__btn {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.icon__menu {
+  opacity: 1;
+}
+
+.icon__menu:hover, .icon__menu:focus {
+  fill: #2196F3;
+  cursor: pointer;
+}
+
+.menu__btn.is-active .icon__menu {
+  opacity: 0;
+}
+
+.icon__cross {
+  opacity: 0;
+}
+
+.menu__btn.is-active .icon__cross {
+  opacity: 1;
+}
+
+.menu__btn.is-active .icon__cross:hover, .menu__btn.is-active .icon__cross:focus {
+  fill: #2196F3;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-light-text);
+  text-decoration: none;
+}
+
+.logo--light {
+  color: var(--primary-dark-text);
+  margin-bottom: 20px;
+}
+
+.logo--dark {
+  color: var(--primary-light-text);
+}
+
+.logo__span {
+  color: var(--akcent-color-text);
+}
+
+.header__contacts {
+  display: none;
+}
+
+.header__sonetlinks {
+  display: none;
 }
 
 .hero {

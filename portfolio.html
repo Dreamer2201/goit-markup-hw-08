@@ -19,43 +19,33 @@
 <body>
     <header class="header">
         <div class="container header__conteiner">
+            <a class="logo header__logo logo--dark" href=""><span class="logo__span">Web</span>Studio </a>
+            <button class="menu__btn" type="button" data-menu-button aria-expandeed="false">
+                <svg class="menu__icons" width="40" height="40" aria-expanded="false" aria-label="switcher menu">
+                    <use class="icon__menu" href="./images/icons.svg#icon-menu_mobile"></use>
+                    <use class="icon__cross" href="./images/icons.svg#icon-close_mobilemenu"></use>
+                </svg>
+            </button>
             <nav class="header__nav">
-                <a class="logo header__logo logo--dark" href=""><span class="logo__span">Web</span>Studio </a>
-    
-                <div>
-                    <ul class="header__list">
-                        <li class="header__it"><a class="header__link" href="./index.html">Студия</a>
-                        </li>
-                        <li class="header__it"><a class="header__link header__link--current" href="./portfolio.html">Портфолио</a></li>
-                        <li class="header__it"><a class="header__link" href="">Контакты</a></li>
-                    </ul>
-                    <ul class="contacts header__contacts">
-                        <li class="contacts__link">
-                            <a class="header__mail" href="mailto:info@devstudio.com">
-                                <svg class="header__icon" width="16" height="12">
-                                    <use href="./images/icons.svg#icon-envelope"></use>
-                                </svg>info@devstudio.com</a>
-                        </li>
-                        <li class="contacts__link"><a class="header__tel" href="tel:+380961111111">
-                                <svg class="header__icon" width="10" height="16">
-                                    <use href="./images/icons.svg#icon-smartphone"></use>
-                                </svg>+38 096 111 11 11</a></li>
-                    </ul>
-                    <ul class="header__sonetlinks">
-                        <li><a href="">Instagram</a></li>
-                        <li><a href=""></a>Twitter</li>
-                        <li><a href=""></a>Facebook</li>
-                        <li><a href=""></a>LinkedIn</li>
-                    </ul>
-                </div>
-                <button class="menu__btn" type="button" data-menu-button aria-expandeed="false">
-                    <svg class="menu__icons" width="40" height="40" aria-expanded="false" aria-label="switcher menu">
-                        <use class="icon__menu" href="./images/icons.svg#icon-menu_mobile"></use>
-                        <use class="icon__cross" href="./images/icons.svg#icon-close_mobilemenu"></use>
-                    </svg>
-                </button>
+                <ul class="header__list">
+                    <li class="header__it"><a class="header__link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header__it"><a class="header__link header__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header__it"><a class="header__link" href="">Контакты</a></li>
+                </ul>
             </nav>
-    
+            <ul class="contacts header__contacts">
+                <li class="contacts__link">
+                    <a class="header__mail" href="mailto:info@devstudio.com">
+                        <svg class="header__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts__link"><a class="header__tel" href="tel:+380961111111">
+                        <svg class="header__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
         </div>
     </header>
     <main>

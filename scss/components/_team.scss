@@ -34,21 +34,21 @@
     margin-bottom: 30px;
 
     @include mq(tablet) {
-        flex-basis: calc(100%/2 - 30px);
+        flex-basis: calc((100% - 30px)/2);
     }
 
-    @include mq (tablet-only) {
+    @include mq(tablet-only) {
         &:nth-child(2n+1) {
             margin-right: 30px;
         }
         
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
+        &:nth-child(n+3) {
+            margin-bottom: 0px;
         }
     }
     
     @include mq(desktop) {
-        flex-basis: calc(100%/4 - 30px);
+        flex-basis: calc((100% - 90px)/4);
         margin-right: 30px;
         margin-bottom: 0px;
 

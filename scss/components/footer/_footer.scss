@@ -10,9 +10,16 @@
 .footer-conteiner {
     text-align: center;
 
+    @include mq(tablet-only) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     @include mq(desktop) {
         display: flex;
         text-align: left;
+        align-items: baseline;
     }
 }
 .footer__address,
@@ -30,9 +37,6 @@
 .footer__tel {
     color: rgba(255, 255, 255, 0.6);
 }
-.footer__list {
-    margin-bottom: 60px;
-}
 .footer__mail:hover,
 .footer__tel:hover,
 .footer__mail:focus,
@@ -45,6 +49,8 @@
     .footer__cardsonetlinks {
         display: flex;
         justify-content: center;
+    
+        margin-bottom: 60px;
     }
     .footer__card {
         margin-right: 165px;

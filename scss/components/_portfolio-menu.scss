@@ -18,6 +18,10 @@
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
+
+    @include mq(desktop) {
+        justify-content: space-between;
+    }
 }
 .portfolio__it {
     width: 100%;
@@ -27,13 +31,13 @@
     }
 
     @include mq(tablet-only) {
-        flex-basis: calc(100%/2 - 30px);
+        flex-basis: calc((100% - 30px)/2);
         &:nth-child(2n+1) {
             margin-right: 30px;
         }
      }
     @include mq(desktop) {
-        flex-basis: calc(100%/3 - 30px);
+        flex-basis: calc((100% - 60px)/3);
         margin-right: 30px;
 
         &:nth-child(3n+3) {

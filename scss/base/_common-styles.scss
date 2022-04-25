@@ -6,6 +6,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -15,13 +16,13 @@ img {
     margin-left: auto;
     margin-right: auto;
 
-    @include qm(mobile) {
+    @include mq(mobile) {
         width: 480px;
     }
-    @include qm(tablet) {
+    @include mq(tablet) {
         width: 768px;
     }
-    @include qm(desktop) {
+    @include mq(desktop) {
         width: 1200px;
     }
 }

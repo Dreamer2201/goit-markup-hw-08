@@ -9,6 +9,11 @@
 }
 .footer-conteiner {
     text-align: center;
+
+    @include mq(desktop) {
+        display: flex;
+        text-align: left;
+    }
 }
 .footer__address,
 .footer__mail,
@@ -35,6 +40,24 @@
    color: var(--akcent-color-text);
   cursor: pointer;
 }
+
+@include mq(tablet) {
+    .footer__cardsonetlinks {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__card {
+        margin-right: 165px;
+    }
+}
+@include mq(desktop) {
+    .footer__card {
+        margin-right: 70px;
+    }
+}
+    
+
+
 // .footer__list,
 // .footer__contacts:last-child {
 //     margin-top: 9px;

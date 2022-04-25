@@ -11,7 +11,6 @@
     background-image: -webkit-image-set(
         url(../images/bg-hero_s.webp) 1x
     );
-
     @include mq(retina) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg-hero_s@2x.png);

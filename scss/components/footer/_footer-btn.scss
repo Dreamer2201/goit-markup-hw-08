@@ -1,10 +1,13 @@
 .footer__btn {
     width: 200px;
     height: 50px;
-    margin-left: 12px;
-    padding: 10px auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    
     letter-spacing: 0.06em;
     color: var(--primary-dark-text);
     background-color: var(--akcent-color-text);
@@ -15,6 +18,10 @@
     &:focus,
     &:hover {
         cursor: pointer;
+    }
+
+    @include mq(desktop) {
+        margin-left: 12px;
     }
 }
 .footer__send {

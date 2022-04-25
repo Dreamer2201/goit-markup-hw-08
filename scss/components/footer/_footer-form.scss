@@ -1,5 +1,10 @@
+
 .footer__form {
     width: 100%;
+
+    @include mq(desktop) {
+        display: flex;
+    }
 }
 .footer__title {
     display: inline-block;
@@ -23,8 +28,25 @@
         border-color: var(--akcent-color-text);
         cursor: pointer;
     }
+
+    @include mq(tablet-only) {
+    width: 450px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    @include mq(desktop) {
+        width: 358px;
+    }
 }
 .footer__input::placeholder {
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+}
+
+@include mq(desktop) {
+    .footer__formblock {
+        margin-left: auto;
+    }
 }

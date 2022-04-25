@@ -11,6 +11,7 @@
     transition: transform var(--animation-function);
     visibility: hidden;
     pointer-events: none;
+    background-color: #ffffff;
 
    @include mq(tablet-only) {
     background-color: #ffffff;

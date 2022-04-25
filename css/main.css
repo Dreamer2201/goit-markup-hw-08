@@ -58,7 +58,7 @@ li {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -124,6 +124,7 @@ img {
   transition: transform var(--animation-function);
   visibility: hidden;
   pointer-events: none;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -369,7 +370,7 @@ img {
 
 .logo {
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -528,7 +529,7 @@ img {
 
 .hero__title {
   text-align: center;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -642,6 +643,7 @@ img {
 
 .feature__subtitle,
 .feature__dscr {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -724,6 +726,7 @@ img {
 
 .team__title {
   margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -780,6 +783,7 @@ img {
 
 .team__name,
 .team__position {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -861,6 +865,7 @@ img {
 }
 
 .clients__title {
+  font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -1193,7 +1198,7 @@ img {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -1235,6 +1240,7 @@ img {
 
 .portfolio__subtitle {
   margin-bottom: 4px;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -1243,6 +1249,7 @@ img {
 }
 
 .portfolio__filter {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -1309,6 +1316,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 63px 24px;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-light-bg);

@@ -37,3 +37,8 @@
 .footer__sonetsvg {
     fill: var(--primary-dark-text);
 }
+@include mq(mobile-only) {
+    .footer__sonetlinks {
+        margin-bottom: 60px;
+    }
+}

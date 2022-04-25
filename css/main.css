@@ -991,6 +991,16 @@ img {
   cursor: pointer;
 }
 
+.footer__card {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer__cardsonetlinks {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__cardsonetlinks {
     display: flex;
@@ -1053,6 +1063,12 @@ img {
 
 .footer__sonetsvg {
   fill: var(--primary-dark-text);
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer__sonetlinks {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__form {

@@ -23,16 +23,23 @@
 }
  .clients__it {
     display: flex;
-    margin-right: 30px;
     margin-bottom: 30px;
-    
-    @include mq(mobile-only) {
-        &:nth-child(2n) {
-            margin-right: 0px;
-        }
+     
+    @include mq(mobile) {
+        margin-right: 30px;
         &:nth-child(n+5) {
             margin-bottom: 0px;
         }
+    }
+  
+    @include mq(mobile-only) {
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+        &:nth-child(2n) {
+            margin-right: 0px;
+        }
+        
     }
     
     @include mq(tablet-only) {

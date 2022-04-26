@@ -34,7 +34,7 @@
 
     &:hover,
     &:focus {
-        fill: #2196F3;
+        fill: var(--akcent-color-text);
         cursor: pointer;
     }
 }
@@ -97,23 +97,4 @@
         }
     }
 }
-// .header {
-//     border-bottom: 1px solid #ececec;
-//     font-weight: 500;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     background-color: var(--primary-light-bg);
-// }
-// .header__list {
-//     display: flex;
-//     padding-left: 0;
-// }
-// 
-// .header__conteiner,
-// .header__nav {
-//     display: flex;
-//     align-items: center;
-// }
-// 
-//     
-// }
+

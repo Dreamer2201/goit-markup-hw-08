@@ -36,6 +36,7 @@
 .footer__mail,
 .footer__tel {
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation-function);
 }
 .footer__mail:hover,
 .footer__tel:hover,
@@ -70,23 +71,4 @@
         margin-right: 70px;
     }
 }
-    
-
-
-// .footer__list,
-// .footer__contacts:last-child {
-//     margin-top: 9px;
-// }
-// .footer__mail,
-// .footer__tel {
-//     display: inline-block;
-//     line-height: 1.71;
-//     color: rgba(255, 255, 255, 0.6);
-//     text-decoration: none;
-//     transition: color var(--animation-function);
-// }
-// 
-// .footer-conteiner {
-//     display: flex;
-//     align-items: baseline;
-// }
+ 

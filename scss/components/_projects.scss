@@ -17,7 +17,7 @@
     margin: 0;
 }
 .projects__it:not(:nth-last-child(-n + 1)) {
-    margin-right: 30px;
+    margin-right: var(--card-set-gap);
 }
 .project__thumb {
     position: relative;

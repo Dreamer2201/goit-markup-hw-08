@@ -27,7 +27,7 @@
 }
 .portfolio__it {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: var(--card-set-gap);
     &:nth-last-child(1) {
         margin-bottom: 0;
     }
@@ -35,12 +35,12 @@
     @include mq(tablet-only) {
         flex-basis: calc((100% - 30px)/2);
         &:nth-child(2n+1) {
-            margin-right: 30px;
+            margin-right: var(--card-set-gap);
         }
      }
     @include mq(desktop) {
         flex-basis: calc((100% - 60px)/3);
-        margin-right: 30px;
+        margin-right: var(--card-set-gap);
 
         &:nth-child(3n+3) {
             margin-right: 0;

@@ -87,10 +87,14 @@
 }
 .menu__tel {
     margin-bottom: 32px;
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 1.67;
     color: var(--akcent-color-text);
     transition: color var(--animation-function);
+
+    @include mq(mobile) {
+        font-size: 34px;
+    }
 }
 .menu__mail {
     font-size: 24px;
@@ -101,6 +105,7 @@
 .menu__sonetlinks {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .menu__netlink {
     margin-right: 10px;
@@ -114,11 +119,15 @@
 .menu__facebook,
 .menu__linkedin {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    
     color: var(--akcent-color-text);
+
+    @include mq(mobile) {
+        font-size: 18px;
+    }
+
 }
 .menu__twitter,
 .menu__facebook,

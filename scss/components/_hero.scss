@@ -1,4 +1,5 @@
 .hero {
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding: 118px 60px;
@@ -8,42 +9,48 @@
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-hero_s.png);
-    background-image: -webkit-image-set(
-        url(../images/bg-hero_s.webp) 1x
-    );
+    background-image: -webkit-image-set(url(../images/bg-hero_s.webp) 1x);
     @include mq(retina) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg-hero_s@2x.png);
-        background-image: -webkit-image-set(url(../images/bg-hero_s@2x.webp) 2x);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_s@2x.webp) 2x);
     }
     
     @include mq(tablet) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg-hero_m.png);
-        background-image: -webkit-image-set(url(../images/bg-hero_m.webp) 1x);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_m.webp) 1x);
         
         @include mq(retina) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/bg-hero_m@2x.png);
-                background-image: -webkit-image-set(url(../images/bg-hero_m@2x.webp) 2x);
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_m@2x.webp) 2x);
         }
     }
 
     @include mq(desktop) {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/bg-hero_l.png);
-            background-image: -webkit-image-set(url(../images/bg-hero_l.webp) 1x);
-    
-        @include mq(retina) {
+
+            padding-top: 200px;
+            padding-bottom: 200px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/bg-hero_l@2x.png);
-                background-image: -webkit-image-set(url(../images/bg-hero_l@2x.webp) 2x);
-        }
-    }
+            url(../images/bg-hero_l.png);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_l.webp) 1x);
+            
+            @include mq(retina) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/bg-hero_l@2x.png);
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_l@2x.webp) 2x);
+            }
+        
+            }
 }
 .hero__title {
+    margin-bottom: 30px;
     text-align: center;
-
     font-family: $main-font;
     font-weight: 900;
     font-size: 26px;
@@ -51,28 +58,39 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-dark-text);
-    
+
+    @include mq(desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+  
 }
 .hero__btn {
     display: block;
     margin-right: auto;
     margin-left: auto;
     min-width: 200px;
+    height: 50px;
     padding: 10px 32px;
     border: 1px solid transparent;
     border-radius: 4px;
     font-family: inherit;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--primary-dark-text);
     background-color: var(--akcent-color-text);
     transition: background-color var(--animation-function);
+
     &:hover,
     &:focus {
     background-color: #188ce8;
     cursor: pointer;
+
+    @include mq(mobile) {
+        font-size: 16px;
+    }
     }
 }
 

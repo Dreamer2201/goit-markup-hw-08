@@ -35,6 +35,7 @@
 }
 .footer__mail,
 .footer__tel {
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation-function);
 }
@@ -69,6 +70,7 @@
 @include mq(desktop) {
     .footer__card {
         margin-right: 70px;
+        margin-bottom: 0;
     }
 }
  

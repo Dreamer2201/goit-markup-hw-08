@@ -1,10 +1,13 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    font-weight: 500;
+}
 .header__conteiner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-    
+        
 }
 .header__nav {
     display: none;
@@ -45,6 +48,11 @@
 .icon__cross {
     opacity: 0;
 
+}
+.menu__btn.is-active .menu__icons {
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 .menu__btn.is-active .icon__cross {
     opacity: 1;

@@ -2,7 +2,7 @@
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
-    padding: 118px 60px;
+    padding: 118px 20px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,9 @@
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_m@2x.webp) 2x);
         }
     }
-
+    @include mq(mobile) {
+        padding: 118px 60px;
+    }
     @include mq(desktop) {
             max-width: 1600px;
             padding-top: 200px;
@@ -91,6 +93,9 @@
 
     @include mq(mobile) {
         font-size: 16px;
+    }
+    @include mq(desktop) {
+        padding: 10px 32px;
     }
 }
 

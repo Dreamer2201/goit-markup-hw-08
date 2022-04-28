@@ -516,7 +516,7 @@ img {
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px 20px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -542,6 +542,12 @@ img {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero_m@2x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url(../images/bg-hero_m@2x.webp) 2x);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    padding: 118px 60px;
   }
 }
 
@@ -611,6 +617,12 @@ img {
 @media screen and (min-width: 480px) {
   .hero__btn {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    padding: 10px 32px;
   }
 }
 
